@@ -1,6 +1,6 @@
 .section .bss
 .globl ram
-.1comm ram, 256         # Reserve 256 bytes of RAM (uninitialized memory)
+.lcomm ram, 256         # Reserve 256 bytes of RAM (uninitialized memory)
 
 .section .text
 .globl fill_ram         # Make function visible to C program
